@@ -1,2 +1,2 @@
-# aprendiendoVue
-Proyecto para aprender VueJs
+# Aprendiendo Vue
+Proyecto para aprender Vue JS
