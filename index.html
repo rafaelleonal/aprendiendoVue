@@ -7,17 +7,21 @@
 </head>
 <body> 
     <div id="app">
-        <h1> {{ message }} </h1>
-        <input type="text" v-model="message"> <!--Biding, modificando mensaje desde Input-->
+        <ul>
+            <li v-for="item in items">{{ item.name }}</li> <!--Probando los ciclos for en arreglos de objetos-->
+        </ul>
     </div>
-
     <script src="vue.js"></script>
     <script>
         var vn = new Vue({
             el: '#app',
             data: {
-                message: 'Hello World with Vue'
-            } 
+                items: [
+                    {name: "Rafa"},
+                    {name: "dos"},
+                    {name: "tres"}
+                ]
+            }
         });
     </script>
 </body>
